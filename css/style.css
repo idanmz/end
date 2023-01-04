@@ -629,25 +629,74 @@ section {
 .lili:not(:last-of-type) {
     margin-bottom: 100px;
 }
-.project-image a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    inset: 0px;
-    z-index: 3;
-    background-color:#296463;
-    mix-blend-mode: screen;}
 
-    .project-image a::before:hover{
-        background-color:#0a192f
-    }
     .cMhhGM {
         display: flex;
         flex-direction: column;
         -webkit-box-align: center;
         align-items: center;
     }
+    .cMhhGM .projects-grid {
+        list-style: none;
+        padding: 0px;
+        margin: 50px 0px 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        position: relative;
+    }
+    #contact{
+        max-width: 600px;
+        margin: 0px auto 100px;
+        text-align: center;
+    }
+    .cou .overline {
+        display: block;
+        margin-bottom: 20px;
+        color: #64ffda;
+        font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .cou .overline::before {
+        bottom: 0px;
+        font-size: 14px;
+        position: relative;
+        counter-increment: section 1;
+        content: "04"".";
+        margin-right: 10px;
+        color: #64ffda;
+        font-weight: 400;
+        font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    }
+    .cou .title{
+         font-size: clamp(40px, 5vw, 60px);
+    }
+    .cou p{
+        margin: 0px;
+    }
+    .email-link{
+        color: #64ffda;
+        background-color: transparent;
+        border: 1px solid #64ffda;
+        border-radius: 4px;
+        padding: 1.25rem 1.75rem;
+        font-size: 14px;
+        font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-top: 50px;
+    
+    }
+    .email-link:hover{
+        background-color: rgba(100,255,218,0.1);
+        outline: none;
+        color: #64ffda;
+    }
+
+
 
 @media (max-width: 768px) {
     .s-menu{
