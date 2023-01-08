@@ -81,7 +81,7 @@ button {
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition:  0.5s 
+    transition:  0.5s;
     margin-left: 15px;
     font-size: 13px;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
@@ -114,8 +114,8 @@ a{
     margin: 0px 5px;
     position: relative;
     counter-increment: item 1;
-    font-size: 13px
-    transition:0.5s
+    font-size: 13px;
+    transition:0.5s;
     
 }
 .s-menu a{
@@ -165,7 +165,7 @@ a{
 .content h3{
     margin-top: 5px;
     color: #8892b0;
-    line-height: 0.9
+    line-height: 0.9;
 }
 
 .s-text p{
@@ -189,12 +189,12 @@ a{
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color:#64ffda
+    background-color:#64ffda;
     transition: 0.5s;
     opacity: 0.5;
 }
 .lkn{
-    color: #64ffda; !important
+    color: #64ffda !important;
     background-color: transparent;
     border: 1px solid #64ffda ;
     border-radius: 4px;
@@ -233,7 +233,7 @@ a{
     font-size: clamp(26px,5vw,32px);
     white-space: nowrap;
     font-weight: 600;
-    color: #ccd6f6
+    color: #ccd6f6;
     line-height: 1.1;
 }
 .abo::before{
@@ -450,11 +450,15 @@ section {
     margin: 0px;
     list-style: none;
 }
+.tablist{
+    flex: 0 1 25%;
+
+}
 .tab1{
     text-decoration: none;
-    text-decoration-skip-ink: auto;
+
     position: relative;
-    transition:0/5s;
+    transition:0.5s;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -484,6 +488,14 @@ section {
     width: 100%;
     margin-left: 20px;
 }
+.tad_bloks{
+    display: none;
+}
+
+.tad_bloks:target {
+    display: block !important;
+}
+
 .tb1{
     width: 100%;
     height: auto;
@@ -520,7 +532,6 @@ section {
 .inline-link {
     display: inline-block;
     text-decoration: none;
-    text-decoration-skip-ink: auto;
     position: relative;
     color: #64ffda;
 }
@@ -715,9 +726,15 @@ section {
         color: #64ffda;
     }
 
-
-
-
+    .myDIV{
+        display: none;
+        float: left;
+    }
+/* Murad */
+    #sect{
+        display: none;
+    }
+/* Murad */
 @media (max-width: 768px) {
     .s-menu{
         display: none;
@@ -762,10 +779,21 @@ section {
     padding: 15px;
     border: 0px;
     background-color: transparent;
-    color:#64ffda 
+    color:#64ffda ;
     text-transform: none;
     transition-timing-function: linear;
     transition-duration: 0.15s;
+    }
+
+    /* Murad */
+    .murad{
+        width: 100px;
+        height: 300px;
+        background-color: red;
+    }
+    .sect{
+        display: block !important;
+        float: left;
     }
     .l-menu{
     position: absolute;
@@ -774,8 +802,9 @@ section {
     width: 30px;
     height: 2px;
     border-radius: 4px;
-    background-color:#64ffda
+    background-color:#64ffda;
     }
+    /* Murad End*/
     .l-menu::before{
         width: 120%;
         top: -10px;
